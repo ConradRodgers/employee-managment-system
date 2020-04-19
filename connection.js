@@ -19,4 +19,19 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId + "\n");
 });
 
+
+
+
+//??????????
+async function startPrompt() {
+  const userInput = await inquirer.prompt([
+      {
+          type: "list",
+          name: "viewNext",
+          message: "What would you like to do?",
+          choices: ["View All Employees", "View All Employees by Department", "View All Employees by Manager", "View All Employees by Role", "End"]
+      }
+  ]);
+//?????????/
+
 module.exports = connection;

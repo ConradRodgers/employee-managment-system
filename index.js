@@ -34,11 +34,13 @@ startPrompt();
     })
 
 
+    
+
 
 
   }
 
-
+module.exports = new db(connection);
 
 // class db {
 //   constructor(connection) {
@@ -47,6 +49,3 @@ startPrompt();
 //   findAllRoles() {
 //     return this.connection.query("SELECT role.title FROM role");
 //   }
-// }
-
-//module.exports = new db(connection);
